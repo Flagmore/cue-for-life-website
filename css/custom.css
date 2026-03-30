@@ -1,0 +1,636 @@
+/* ===== Cue for Life — Custom Overrides ===== */
+
+/*
+   Primary:   #1B5E20 (deep baize green — pool table felt)
+   Accent:    #E6A817 (warm gold — Kenya, warmth, energy)
+   Dark:      #0D1B0F (near-black green)
+   Light:     #F5F5F0 (warm off-white)
+*/
+
+
+/* ===== 1. COLOUR SCHEME ===== */
+
+.bg-primary { background-color: #1B5E20 !important; }
+.bg-secondary { background-color: #0D1B0F !important; }
+.text-primary { color: #1B5E20 !important; }
+.text-secondary { color: #E6A817 !important; }
+
+.btn-primary {
+    background-color: #E6A817 !important;
+    border-color: #E6A817 !important;
+    color: #0D1B0F !important;
+    font-weight: 600;
+}
+.btn-primary:hover { background-color: #D4990F !important; border-color: #D4990F !important; }
+
+.btn-secondary {
+    background-color: #1B5E20 !important;
+    border-color: #1B5E20 !important;
+    color: #fff !important;
+    font-weight: 600;
+}
+.btn-secondary:hover { background-color: #145218 !important; border-color: #145218 !important; }
+
+.btn-dark { background-color: #0D1B0F !important; border-color: #0D1B0F !important; }
+
+/* Navbar */
+.nav-bar .navbar { background-color: #1B5E20 !important; }
+.nav-bar .navbar .nav-link { color: rgba(255,255,255,0.85) !important; }
+.nav-bar .navbar .nav-link:hover,
+.nav-bar .navbar .nav-link.active { color: #E6A817 !important; }
+
+/* Top bar */
+.top-bar { background-color: #0D1B0F !important; }
+.top-bar h1, .top-bar .text-primary { color: #E6A817 !important; }
+
+/* Section titles */
+.section-title.text-primary { color: #E6A817 !important; }
+.section-title::before { border-top-color: #1B5E20 !important; }
+.section-title::after { border-bottom-color: #1B5E20 !important; }
+
+/* Service items */
+.service-item i.text-secondary { color: #E6A817 !important; }
+.service-item a::after { border-bottom-color: #1B5E20 !important; }
+
+/* Stats */
+.bg-primary .text-secondary { color: #E6A817 !important; }
+.bg-secondary .text-primary { color: #E6A817 !important; }
+
+/* Donate section */
+.donate-form.bg-primary { background-color: #1B5E20 !important; }
+.donate-form .text-dark { color: #F5F5F0 !important; }
+.donate-form h2 { color: #E6A817 !important; }
+.donate-form h1 { color: #E6A817 !important; }
+.donate-form hr { border-color: rgba(255,255,255,0.3) !important; }
+.donate-text { background-color: #F5F5F0 !important; }
+
+/* Remove template corner triangles */
+.banner .banner-inner::before,
+.banner .banner-inner::after,
+.donate .donate-text::before,
+.donate .donate-text::after {
+    display: none !important;
+}
+
+/* Footer */
+.footer { background: #0D1B0F !important; }
+.footer .btn-link { color: rgba(255,255,255,0.7) !important; }
+.footer .btn-link:hover { color: #E6A817 !important; }
+.footer .btn-primary { background-color: #1B5E20 !important; border-color: #1B5E20 !important; }
+.footer .btn-primary:hover { background-color: #E6A817 !important; border-color: #E6A817 !important; }
+.copyright a { color: #E6A817 !important; }
+
+/* Quote banner */
+.container-fluid.bg-primary .fa-quote-left { color: #E6A817 !important; }
+
+/* Checks */
+.fa-check.text-primary { color: #E6A817 !important; }
+
+/* Links */
+a.fw-semi-bold { color: #E6A817 !important; }
+
+/* Spinner */
+.spinner-border.text-primary { color: #1B5E20 !important; }
+
+/* Back to top */
+.back-to-top { background-color: #E6A817 !important; border-color: #E6A817 !important; color: #0D1B0F !important; }
+
+
+/* ===== 2. CAROUSEL ARROWS — SPLIT LEFT/RIGHT ===== */
+
+.header-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    padding: 0 3rem;
+    width: 100%;
+}
+
+.header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+    pointer-events: all;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #0D1B0F;
+    background: #E6A817;
+    transition: all 0.3s;
+    margin: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-next:hover {
+    background: #fff;
+    color: #1B5E20;
+}
+
+/* Testimonial carousel arrows — also split */
+.testimonial-carousel .owl-nav {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 1.5rem;
+    transform: none;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.testimonial-carousel .owl-prev,
+.testimonial-carousel .owl-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% !important;
+    background: #E6A817 !important;
+    color: #0D1B0F !important;
+}
+
+.testimonial-carousel .owl-prev:hover,
+.testimonial-carousel .owl-next:hover {
+    background: #1B5E20 !important;
+    color: #fff !important;
+}
+
+
+/* ===== 3. ROUNDED EDGES ===== */
+
+/* Cards and content blocks */
+.service-item {
+    border-radius: 16px !important;
+    border: 1px solid #e8e8e0;
+    padding: 1.5rem;
+}
+
+.team-item {
+    border-radius: 16px !important;
+    overflow: hidden;
+}
+
+.banner .banner-inner {
+    border-radius: 20px !important;
+    overflow: hidden;
+}
+
+.donate .donate-text {
+    border-radius: 20px 0 0 20px !important;
+    overflow: hidden;
+}
+
+.donate .donate-form {
+    border-radius: 0 20px 20px 0 !important;
+}
+
+@media (max-width: 991.98px) {
+    .donate .donate-text {
+        border-radius: 20px 20px 0 0 !important;
+    }
+    .donate .donate-form {
+        border-radius: 0 0 20px 20px !important;
+    }
+}
+
+/* Stats grid */
+.rounded.overflow-hidden {
+    border-radius: 20px !important;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px !important;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    border-radius: 12px !important;
+}
+
+/* Nav bar */
+.nav-bar .navbar {
+    border-radius: 12px;
+}
+
+.top-bar {
+    border-radius: 0;
+}
+
+/* Scroll offset — compensates for fixed top bar covering section headings */
+[id] {
+    scroll-margin-top: 160px;
+}
+
+/* Dark body so no white peeks around the top bar */
+body {
+    background-color: #0D1B0F;
+}
+
+/* Everything below the nav gets white again */
+#home, #home ~ * {
+    background-color: #fff;
+}
+#home ~ .container-fluid.bg-primary,
+#home ~ .container-fluid.donate,
+#home ~ .container-fluid.banner,
+#home ~ .container-fluid.footer {
+    background-color: unset;
+}
+
+/* Quote banner */
+.container-fluid.bg-primary.mb-5 > .container {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* Remove corner cutouts on about image */
+.about-img::before,
+.about-img::after {
+    display: none !important;
+}
+
+/* Testimonial image backing */
+.testimonial-img::before {
+    border-radius: 16px !important;
+    background: #1B5E20 !important;
+}
+
+/* Footer gallery */
+.footer .row.g-2 .img-placeholder {
+    border-radius: 8px !important;
+}
+
+
+/* ===== 4. POOL / BILLIARDS VISUAL REFERENCES ===== */
+
+/* --- Baize felt texture on disciplines section --- */
+#disciplines {
+    background:
+        radial-gradient(ellipse at 20% 50%, rgba(27,94,32,0.04) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 50%, rgba(27,94,32,0.04) 0%, transparent 50%),
+        linear-gradient(180deg, #F5F5F0 0%, #fff 100%);
+}
+
+/* --- Pool ball icons for discipline cards --- */
+.service-item .btn-square {
+    width: 60px;
+    height: 60px;
+    border-radius: 50% !important;
+    position: relative;
+    background: linear-gradient(145deg, #fff 30%, #e0e0d8 100%) !important;
+    box-shadow:
+        inset 0 -3px 6px rgba(0,0,0,0.1),
+        0 3px 8px rgba(0,0,0,0.12);
+    border: 2px solid #d5d5c8;
+}
+
+/* Stripe across the ball */
+.service-item .btn-square::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    height: 50%;
+    border-radius: 50%;
+    background: #E6A817;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.service-item .btn-square i {
+    position: relative;
+    z-index: 1;
+}
+
+/* --- Pool ball section dividers --- */
+.cfl-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 2rem 0;
+}
+
+.pool-ball {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    box-shadow:
+        inset 0 -2px 4px rgba(0,0,0,0.2),
+        0 2px 4px rgba(0,0,0,0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Gloss highlight on balls */
+.pool-ball::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 8px;
+    height: 6px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+}
+
+.pool-ball.solid-1 { background: #E6A817; }
+.pool-ball.solid-2 { background: #1565C0; }
+.pool-ball.solid-3 { background: #C62828; }
+.pool-ball.solid-4 { background: #4A148C; }
+.pool-ball.solid-5 { background: #E65100; }
+.pool-ball.solid-6 { background: #1B5E20; }
+.pool-ball.solid-7 { background: #880E4F; }
+.pool-ball.eight-ball { background: #0D1B0F; }
+
+.pool-ball.striped {
+    background: #fff;
+    color: #333;
+}
+.pool-ball.striped::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    height: 50%;
+    z-index: 0;
+}
+.pool-ball.striped.stripe-9::after { background: #E6A817; }
+.pool-ball.striped.stripe-10::after { background: #1565C0; }
+.pool-ball.striped.stripe-11::after { background: #C62828; }
+
+.pool-ball span {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    color: #333;
+}
+
+/* Donate section clean rounded edge */
+.donate .container > .row {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* --- Felt texture on stat counters --- */
+.rounded.overflow-hidden .bg-primary,
+.rounded.overflow-hidden .bg-secondary {
+    background-image:
+        radial-gradient(circle at 30% 40%, rgba(255,255,255,0.05) 0%, transparent 50%),
+        radial-gradient(circle at 70% 60%, rgba(255,255,255,0.03) 0%, transparent 50%) !important;
+}
+.rounded.overflow-hidden .bg-primary {
+    background-color: #1B5E20 !important;
+}
+.rounded.overflow-hidden .bg-secondary {
+    background-color: #0D1B0F !important;
+}
+
+/* --- Diamond markers (like pool table sights) on section titles --- */
+.section-title::before {
+    border-top: 2px solid #E6A817 !important;
+}
+.section-title::after {
+    border-bottom: 2px solid #E6A817 !important;
+}
+
+/* --- Cue-stick horizontal rule --- */
+.cfl-cue-rule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.cfl-cue-rule .cue-shaft {
+    height: 3px;
+    flex: 1;
+    background: linear-gradient(90deg, #E6A817, #D4990F);
+    border-radius: 2px;
+}
+
+.cfl-cue-rule .cue-ferrule {
+    width: 8px;
+    height: 5px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+}
+
+.cfl-cue-rule .cue-tip {
+    width: 6px;
+    height: 6px;
+    background: #4A90D9;
+    border-radius: 50% 50% 2px 2px;
+}
+
+.cfl-cue-rule .cue-wrap {
+    height: 4px;
+    width: 60px;
+    background: repeating-linear-gradient(
+        90deg,
+        #0D1B0F 0px,
+        #0D1B0F 4px,
+        #1B5E20 4px,
+        #1B5E20 8px
+    );
+    border-radius: 2px;
+}
+
+.cfl-cue-rule .cue-butt {
+    height: 5px;
+    width: 30px;
+    background: linear-gradient(90deg, #0D1B0F, #1a1a1a);
+    border-radius: 2px 4px 4px 2px;
+}
+
+
+/* ===== 5. HERO WITH SCROLLING PHOTO STRIP ===== */
+
+.cfl-hero {
+    position: relative;
+    overflow: hidden;
+    background: #0D1B0F;
+}
+
+/* The scrolling strip sits behind everything */
+.cfl-hero-strip {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.cfl-hero-track {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    height: 100%;
+    width: max-content;
+    animation: cfl-scroll 80s linear infinite;
+}
+
+.cfl-hero-photo {
+    flex-shrink: 0;
+    width: 480px;
+    height: 300px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.12);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    /* When real images: background-size: cover; background-position: center; */
+}
+
+@keyframes cfl-scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Dark overlay — heavier on the left where text sits, lighter on the right */
+.cfl-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: linear-gradient(
+        90deg,
+        rgba(13,27,15,0.88) 0%,
+        rgba(13,27,15,0.7) 45%,
+        rgba(13,27,15,0.35) 100%
+    );
+}
+
+@media (max-width: 991.98px) {
+    .cfl-hero-overlay {
+        background: rgba(13,27,15,0.8);
+    }
+    .cfl-hero-photo {
+        width: 260px;
+        height: 170px;
+    }
+}
+
+
+/* ===== 6. IMAGE PLACEHOLDERS ===== */
+
+.img-placeholder {
+    background-color: #2E7D32;
+    color: rgba(255,255,255,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, transparent 60%);
+}
+
+.img-placeholder.hero { min-height: 350px; font-size: 1.1rem; border-radius: 16px; }
+.img-placeholder.about { min-height: 400px; border-radius: 16px; }
+.img-placeholder.team { min-height: 280px; width: 100%; border-radius: 12px; }
+.img-placeholder.testimonial { min-height: 300px; border-radius: 12px; }
+.img-placeholder.gallery { min-height: 80px; font-size: 0.7rem; border-radius: 8px; }
+
+.img-placeholder.alt-tone { background-color: #0D1B0F; }
+.img-placeholder.gold-tone { background-color: #E6A817; color: #0D1B0F; }
+
+
+/* ===== 6. MISC POLISH ===== */
+
+/* Softer shadows overall */
+.service-item:hover {
+    box-shadow: 0 4px 20px rgba(27,94,32,0.12);
+    transform: translateY(-2px);
+    transition: all 0.3s;
+}
+
+.team-item:hover {
+    box-shadow: 0 4px 20px rgba(27,94,32,0.12);
+    transform: translateY(-2px);
+    transition: all 0.3s;
+}
+
+/* Remove all template background images (bg.jpg, bg-footer.jpg) */
+.header-carousel {
+    background: linear-gradient(135deg, #F5F5F0 0%, #e8e8e0 100%) !important;
+}
+
+.page-header {
+    background: linear-gradient(135deg, #1B5E20 0%, #0D1B0F 100%) !important;
+}
+
+.banner .banner-inner {
+    background: #F5F5F0 !important;
+}
+
+.donate .donate-text {
+    background: #F5F5F0 !important;
+}
+
+.service-title {
+    background: linear-gradient(135deg, #1B5E20 0%, #0D1B0F 100%) !important;
+    border-radius: 16px !important;
+    color: #fff;
+}
+
+.service-title h1,
+.service-title p {
+    color: #fff !important;
+}
+
+.testimonial-title {
+    background: linear-gradient(135deg, #0D1B0F 0%, #1B5E20 100%) !important;
+    border-radius: 16px !important;
+    color: #fff;
+}
+
+.testimonial-title h1,
+.testimonial-title p {
+    color: #fff !important;
+}
+
+.footer {
+    background: #0D1B0F !important;
+}
