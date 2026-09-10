@@ -585,7 +585,9 @@
         var q = new URLSearchParams(location.search).get('lang');
         var saved = null;
         try { saved = localStorage.getItem('cfl-lang'); } catch (e) {}
-        var initial = q || saved || ((navigator.language || '').toLowerCase().indexOf('nl') === 0 ? 'nl' : 'en');
+        // Default EN until Date has proofed the Dutch; then restore browser-language detection:
+        // var initial = q || saved || ((navigator.language || '').toLowerCase().indexOf('nl') === 0 ? 'nl' : 'en');
+        var initial = q || saved || 'en';
         setLang(initial === 'nl' ? 'nl' : 'en');
         btns.forEach(function (b) {
             b.addEventListener('click', function () { setLang(b.getAttribute('data-lang')); });
