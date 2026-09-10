@@ -51,7 +51,6 @@
 
 <!--
     TODO before launch:
-    - Replace all href="#!" with real GoFundMe / Kickstarter URLs
     - Replace placeholder images with real photos from Date/Peter
     - Replace favicon with Cue for Life logo
     - Replace og:image with actual share image
@@ -77,7 +76,7 @@
                                 <i class="fa fa-envelope-open text-dark"></i>
                             </div>
                             <div class="ms-2">
-                                <h6 class="text-primary mb-0">Email</h6>
+                                <h6 class="text-primary mb-0" data-i18n="t1">Email</h6>
                                 <span class="text-white">info@cueforlife.com</span>
                             </div>
                         </div>
@@ -88,8 +87,8 @@
                                 <i class="fa fa-map-marker-alt text-dark"></i>
                             </div>
                             <div class="ms-2">
-                                <h6 class="text-primary mb-0">Location</h6>
-                                <span class="text-white">Kunste Hotel, Nakuru, Kenya</span>
+                                <h6 class="text-primary mb-0" data-i18n="t2">Location</h6>
+                                <span class="text-white" data-i18n="t77">Kunste Hotel, Nakuru, Kenya</span>
                             </div>
                         </div>
                     </div>
@@ -99,8 +98,8 @@
                                 <i class="fa fa-building text-dark"></i>
                             </div>
                             <div class="ms-2">
-                                <h6 class="text-primary mb-0">Registered</h6>
-                                <span class="text-white">Cue for Life (coming soon)</span>
+                                <h6 class="text-primary mb-0" data-i18n="t3">Registered</h6>
+                                <span class="text-white" data-i18n="t4">Cue for Life (coming soon)</span>
                             </div>
                         </div>
                     </div>
@@ -123,14 +122,15 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav me-auto">
                         <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#about" class="nav-item nav-link" data-i18n="t5">About</a>
                         <a href="#disciplines" class="nav-item nav-link">Disciplines</a>
-                        <a href="#donate" class="nav-item nav-link">Donate</a>
+                        <a href="#donate" class="nav-item nav-link" data-i18n="t6">Donate</a>
                         <a href="#team" class="nav-item nav-link">Team</a>
                         <a href="#contact" class="nav-item nav-link">Contact</a>
+                        <a href="#" class="nav-item nav-link cfl-lang" id="cflLang" title="Nederlands">NL</a>
                     </div>
                     <div class="d-none d-lg-flex ms-auto align-items-center">
-                        <span class="text-white me-3" style="font-size: 0.8rem; opacity: 0.6;">Socials coming soon</span>
+                        <span class="text-white me-3" style="font-size: 0.8rem; opacity: 0.6;" data-i18n="t7">Socials coming soon</span>
                         <span class="btn btn-square ms-1" style="opacity: 0.4; cursor: default;"><i class="fab fa-instagram text-white"></i></span>
                         <span class="btn btn-square ms-1" style="opacity: 0.4; cursor: default;"><i class="fab fa-facebook-f text-white"></i></span>
                         <span class="btn btn-square ms-1" style="opacity: 0.4; cursor: default;"><i class="fab fa-youtube text-white"></i></span>
@@ -147,19 +147,19 @@
         <!-- Scrolling photo strip -->
         <div class="cfl-hero-strip">
             <div class="cfl-hero-track">
-                <div class="cfl-hero-photo" style="background-color: #1B5E20;">The Centre</div>
-                <div class="cfl-hero-photo" style="background-color: #0D1B0F;">Players</div>
+                <div class="cfl-hero-photo" style="background-color: #1B5E20;" data-i18n="t8">The Centre</div>
+                <div class="cfl-hero-photo" style="background-color: #0D1B0F;" data-i18n="t9">Players</div>
                 <div class="cfl-hero-photo" style="background-color: #2E7D32;">Nakuru</div>
                 <div class="cfl-hero-photo" style="background-color: #145218;">Date &amp; Peter</div>
                 <div class="cfl-hero-photo" style="background-color: #1a4a1e;">Amos</div>
-                <div class="cfl-hero-photo" style="background-color: #0D1B0F;">Equipment</div>
+                <div class="cfl-hero-photo" style="background-color: #0D1B0F;" data-i18n="t10">Equipment</div>
                 <!-- Duplicated for seamless loop -->
-                <div class="cfl-hero-photo" style="background-color: #1B5E20;">The Centre</div>
-                <div class="cfl-hero-photo" style="background-color: #0D1B0F;">Players</div>
+                <div class="cfl-hero-photo" style="background-color: #1B5E20;" data-i18n="t8">The Centre</div>
+                <div class="cfl-hero-photo" style="background-color: #0D1B0F;" data-i18n="t9">Players</div>
                 <div class="cfl-hero-photo" style="background-color: #2E7D32;">Nakuru</div>
                 <div class="cfl-hero-photo" style="background-color: #145218;">Date &amp; Peter</div>
                 <div class="cfl-hero-photo" style="background-color: #1a4a1e;">Amos</div>
-                <div class="cfl-hero-photo" style="background-color: #0D1B0F;">Equipment</div>
+                <div class="cfl-hero-photo" style="background-color: #0D1B0F;" data-i18n="t10">Equipment</div>
             </div>
         </div>
         <!-- Overlay for text readability -->
@@ -168,11 +168,11 @@
         <div class="container position-relative" style="z-index: 3;">
             <div class="row align-items-center" style="min-height: 420px;">
                 <div class="col-lg-7 col-xl-6">
-                    <h1 class="display-5 text-white mb-3" style="font-weight: 700;">Five Disciplines. One Roof.<br>One Dream.</h1>
-                    <p class="fs-6 text-white mb-4" style="max-width: 480px; opacity: 0.9;">We're building Africa's first dedicated multi-discipline cue sports centre in Nakuru, Kenya — bringing world-class facilities to players who've never had access.</p>
+                    <h1 class="display-5 text-white mb-3" style="font-weight: 700;" data-i18n="t11">Five Disciplines. One Roof.<br>One Dream.</h1>
+                    <p class="fs-6 text-white mb-4" style="max-width: 480px; opacity: 0.9;" data-i18n="t12">We're building Africa's first dedicated multi-discipline cue sports centre in Nakuru, Kenya — bringing world-class facilities to players who've never had access.</p>
                     <div class="d-flex">
-                        <a class="btn btn-primary py-2 px-4 me-3" href="#donate">Donate Now</a>
-                        <a class="btn py-2 px-4" href="#about" style="background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.3);">Our Story</a>
+                        <a class="btn btn-primary py-2 px-4 me-3" href="#donate" data-i18n="t13">Donate Now</a>
+                        <a class="btn py-2 px-4" href="#about" style="background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.3);" data-i18n="t14">Our Story</a>
                     </div>
                 </div>
             </div>
@@ -199,19 +199,19 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
                     <div class="about-img">
-                        <div class="img-placeholder about w-100">Photo: Date &amp; Peter at tournament</div>
+                        <div class="img-placeholder about w-100" data-i18n="t15">Photo: Date &amp; Peter at tournament</div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <p class="section-title bg-white text-start text-primary pe-3">About Us</p>
-                    <h1 class="display-6 mb-4 wow fadeIn" data-wow-delay="0.2s">From a Chance Meeting to a Shared Dream</h1>
-                    <p class="mb-4 wow fadeIn" data-wow-delay="0.3s">It started in 2018 at a national billiards championship in the Netherlands. Date van Leeuwen travelled to China for the world tournament, where he saw first-hand the gap between what professional players take for granted and what's available in countries where access to quality equipment is limited.</p>
-                    <p class="mb-4 wow fadeIn" data-wow-delay="0.4s">On the bus to the venue, Date met Peter Kenyua from Kenya. Their conversation sparked an idea: start collecting quality tables, cues, and accessories — and get them to the players who need them most. That idea grew into Cue for Life.</p>
+                    <p class="section-title bg-white text-start text-primary pe-3" data-i18n="t16">About Us</p>
+                    <h1 class="display-6 mb-4 wow fadeIn" data-wow-delay="0.2s" data-i18n="t17">From a Chance Meeting to a Shared Dream</h1>
+                    <p class="mb-4 wow fadeIn" data-wow-delay="0.3s" data-i18n="t18">It started in 2018 at a national billiards championship in the Netherlands. Date van Leeuwen travelled to China for the world tournament, where he saw first-hand the gap between what professional players take for granted and what's available in countries where access to quality equipment is limited.</p>
+                    <p class="mb-4 wow fadeIn" data-wow-delay="0.4s" data-i18n="t19">On the bus to the venue, Date met Peter Kenyua from Kenya. Their conversation sparked an idea: start collecting quality tables, cues, and accessories — and get them to the players who need them most. That idea grew into Cue for Life.</p>
                     <div class="row g-4 pt-2">
                         <div class="col-12 wow fadeIn" data-wow-delay="0.4s">
                             <div class="h-100">
-                                <h3>Our Mission</h3>
-                                <p class="mb-0">Build the first dedicated multi-discipline cue sports centre in Africa — five disciplines under one roof, with training, competition, and community at its heart.</p>
+                                <h3 data-i18n="t20">Our Mission</h3>
+                                <p class="mb-0" data-i18n="t21">Build the first dedicated multi-discipline cue sports centre in Africa — five disciplines under one roof, with training, competition, and community at its heart.</p>
                             </div>
                         </div>
                     </div>
@@ -228,8 +228,8 @@
             <div class="row g-5">
                 <div class="col-md-12 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
                     <div class="service-title">
-                        <h1 class="display-6 mb-4">Five Disciplines Under One Roof.</h1>
-                        <p class="fs-5 mb-0">The first venue in Africa — possibly the world — to house all five major cue sports disciplines in a single location.</p>
+                        <h1 class="display-6 mb-4" data-i18n="t22">Five Disciplines Under One Roof.</h1>
+                        <p class="fs-5 mb-0" data-i18n="t23">The first venue in Africa — possibly the world — to house all five major cue sports disciplines in a single location.</p>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-8 col-xl-9">
@@ -239,8 +239,8 @@
                                 <div class="btn-square bg-light mb-4">
                                     <i class="fa fa-circle fa-2x text-secondary"></i>
                                 </div>
-                                <h3>English Pool</h3>
-                                <p class="mb-2">The classic blackball game — fast, tactical, and hugely popular across Africa and Europe.</p>
+                                <h3 data-i18n="t24">English Pool</h3>
+                                <p class="mb-2" data-i18n="t25">The classic blackball game — fast, tactical, and hugely popular across Africa and Europe.</p>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.3s">
@@ -248,8 +248,8 @@
                                 <div class="btn-square bg-light mb-4">
                                     <i class="fa fa-circle-half-stroke fa-2x text-secondary"></i>
                                 </div>
-                                <h3>American Pool</h3>
-                                <p class="mb-2">9-ball, 10-ball, 8-ball — the disciplines that dominate the world stage and professional tours.</p>
+                                <h3 data-i18n="t26">American Pool</h3>
+                                <p class="mb-2" data-i18n="t27">9-ball, 10-ball, 8-ball — the disciplines that dominate the world stage and professional tours.</p>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.5s">
@@ -258,7 +258,7 @@
                                     <i class="fa fa-star fa-2x text-secondary"></i>
                                 </div>
                                 <h3>Heyball</h3>
-                                <p class="mb-2">Chinese 8-ball — the fastest-growing cue sport in the world, with massive tournaments and prize pools.</p>
+                                <p class="mb-2" data-i18n="t28">Chinese 8-ball — the fastest-growing cue sport in the world, with massive tournaments and prize pools.</p>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.1s">
@@ -267,7 +267,7 @@
                                     <i class="fa fa-diamond fa-2x text-secondary"></i>
                                 </div>
                                 <h3>Snooker</h3>
-                                <p class="mb-2">The gentleman's game — precision, strategy, and the ultimate test of cue ball control on a 12-foot table.</p>
+                                <p class="mb-2" data-i18n="t29">The gentleman's game — precision, strategy, and the ultimate test of cue ball control on a 12-foot table.</p>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.3s">
@@ -275,8 +275,8 @@
                                 <div class="btn-square bg-light mb-4">
                                     <i class="fa fa-gem fa-2x text-secondary"></i>
                                 </div>
-                                <h3>Russian Pyramid</h3>
-                                <p class="mb-2">Played on a snooker-sized table with near-pocket-sized balls — a true test of precision and power.</p>
+                                <h3 data-i18n="t30">Russian Pyramid</h3>
+                                <p class="mb-2" data-i18n="t31">Played on a snooker-sized table with near-pocket-sized balls — a true test of precision and power.</p>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.5s">
@@ -284,8 +284,8 @@
                                 <div class="btn-square bg-light mb-4">
                                     <i class="fa fa-building fa-2x text-secondary"></i>
                                 </div>
-                                <h3>The Full Venue</h3>
-                                <p class="mb-2">More than tables — the centre includes training programmes, a hotel, restaurant, bar, and cue shop.</p>
+                                <h3 data-i18n="t32">The Full Venue</h3>
+                                <p class="mb-2" data-i18n="t33">More than tables — the centre includes training programmes, a hotel, restaurant, bar, and cue shop.</p>
                             </div>
                         </div>
                     </div>
@@ -307,45 +307,45 @@
                                 <div class="text-center bg-primary py-5 px-4 h-100">
                                     <i class="fa fa-circle fa-3x text-secondary mb-3"></i>
                                     <h1 class="display-5 mb-0 text-white" data-toggle="counter-up">22</h1>
-                                    <span style="color: #F5F5F0;">Tables in Kenya</span>
+                                    <span style="color: #F5F5F0;" data-i18n="t34">Tables in Kenya</span>
                                 </div>
                             </div>
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                                 <div class="text-center bg-secondary py-5 px-4 h-100">
                                     <i class="fa fa-layer-group fa-3x text-primary mb-3"></i>
                                     <h1 class="display-5 text-white mb-0" data-toggle="counter-up">5</h1>
-                                    <span class="text-white">Cue Disciplines</span>
+                                    <span class="text-white" data-i18n="t35">Cue Disciplines</span>
                                 </div>
                             </div>
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                                 <div class="text-center bg-secondary py-5 px-4 h-100">
                                     <i class="fa fa-globe fa-3x text-primary mb-3"></i>
                                     <h1 class="display-5 text-white mb-0" data-toggle="counter-up">2</h1>
-                                    <span class="text-white">Countries United</span>
+                                    <span class="text-white" data-i18n="t36">Countries United</span>
                                 </div>
                             </div>
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                                 <div class="text-center bg-primary py-5 px-4 h-100">
                                     <i class="fa fa-dollar-sign fa-3x text-secondary mb-3"></i>
                                     <h1 class="display-5 mb-0 text-white">$84K+</h1>
-                                    <span style="color: #F5F5F0;">Already Invested</span>
+                                    <span style="color: #F5F5F0;" data-i18n="t37">Already Invested</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <p class="section-title bg-white text-start text-primary pe-3">The Build</p>
-                    <h1 class="display-6 mb-4 wow fadeIn" data-wow-delay="0.2s">We're Close — Help Us Get There</h1>
-                    <p class="mb-4 wow fadeIn" data-wow-delay="0.3s">22 tables are already in-country, valued at over $53,000. More than $31,000 has been spent on the venue fit-out at Kunste Hotel, Nakuru. The original financier, Fred, passed away suddenly in October 2025 — but Date and Peter are carrying the project forward.</p>
+                    <p class="section-title bg-white text-start text-primary pe-3" data-i18n="t38">The Build</p>
+                    <h1 class="display-6 mb-4 wow fadeIn" data-wow-delay="0.2s" data-i18n="t39">We're Close — Help Us Get There</h1>
+                    <p class="mb-4 wow fadeIn" data-wow-delay="0.3s" data-i18n="t40">22 tables are already in-country, valued at over $53,000. More than $31,000 has been spent on the venue fit-out at Kunste Hotel, Nakuru. The original financier, Fred, passed away suddenly in October 2025 — but Date and Peter are carrying the project forward.</p>
                     <p class="text-dark wow fadeIn" data-wow-delay="0.4s"><i
-                            class="fa fa-check text-primary me-2"></i>Venue secured and fit-out underway</p>
+                            class="fa fa-check text-primary me-2"></i><span data-i18n="t70">Venue secured and fit-out underway</span></p>
                     <p class="text-dark wow fadeIn" data-wow-delay="0.5s"><i
-                            class="fa fa-check text-primary me-2"></i>Entity registration in progress</p>
+                            class="fa fa-check text-primary me-2"></i><span data-i18n="t71">Entity registration in progress</span></p>
                     <p class="text-dark wow fadeIn" data-wow-delay="0.6s"><i
-                            class="fa fa-check text-primary me-2"></i>Final funding needed to complete the build</p>
+                            class="fa fa-check text-primary me-2"></i><span data-i18n="t72">Final funding needed to complete the build</span></p>
                     <div class="d-flex mt-4 wow fadeIn" data-wow-delay="0.7s">
-                        <a class="btn btn-primary py-3 px-4" href="#donate">Donate Now</a>
+                        <a class="btn btn-primary py-3 px-4" href="#donate" data-i18n="t13">Donate Now</a>
                     </div>
                 </div>
             </div>
@@ -360,27 +360,27 @@
             <div class="row g-0">
                 <div class="col-lg-7 donate-text bg-light py-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="d-flex flex-column justify-content-center h-100 p-5 wow fadeIn" data-wow-delay="0.3s">
-                        <h1 class="display-6 mb-4">Help Us Finish What We Started</h1>
-                        <p class="fs-5 mb-4">We need $90,000 to complete the centre — flooring, lighting, and final construction. Every dollar goes directly toward the build.</p>
-                        <p class="mb-4">Your support means players in Kenya will have access to facilities that most professionals take for granted.</p>
+                        <h1 class="display-6 mb-4" data-i18n="t41">Help Us Finish What We Started</h1>
+                        <p class="fs-5 mb-4" data-i18n="t42">The full build needs around $100,000. We are raising it in stages: phase 1 is $20,000 to open the doors (licences, rent, toilets, lighting, cues and balls, floor, snooker room). Once open, the centre earns its keep while the rest follows. Every dollar goes directly toward the build.</p>
+                        <p class="mb-4" data-i18n="t43">Your support means players in Kenya will have access to facilities that most professionals take for granted.</p>
                         <div class="d-flex flex-wrap gap-3">
                             <a class="btn btn-primary py-3 px-4" href="https://www.gofundme.com/f/build-africas-first-multidiscipline-cue-sports-centre" target="_blank"><i class="fa fa-heart me-2"></i>GoFundMe</a>
-                            <a class="btn btn-secondary py-3 px-4" href="#!" target="_blank"><i class="fa fa-rocket me-2"></i>Kickstarter</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5 donate-form bg-primary py-5 text-center wow fadeIn" data-wow-delay="0.5s">
                     <div class="h-100 p-5 d-flex flex-column justify-content-center">
-                        <h2 class="mb-4">Fundraising Goal</h2>
-                        <h1 class="display-3 mb-2">$90,000</h1>
-                        <p class="fs-5 mb-4" style="color: rgba(255,255,255,0.7);">USD</p>
+                        <h2 class="mb-4" data-i18n="t44">Fundraising Goal</h2>
+                        <h1 class="display-3 mb-2">$20,000</h1>
+                        <p class="fs-5 mb-4" style="color: rgba(255,255,255,0.7);" data-i18n="t45">USD, phase 1: open the doors</p>
                         <hr>
                         <div class="text-start">
-                            <p class="mb-2"><i class="fa fa-check me-2"></i>Tables &amp; equipment: $53,200 (done)</p>
-                            <p class="mb-2"><i class="fa fa-check me-2"></i>Fit-out so far: $31,200 (done)</p>
-                            <p class="mb-2"><i class="fa fa-arrow-right me-2"></i>Remaining build: $90,000 (needed)</p>
+                            <p class="mb-2"><i class="fa fa-check me-2"></i><span data-i18n="t73">Tables &amp; equipment: $53,200 (done)</span></p>
+                            <p class="mb-2"><i class="fa fa-check me-2"></i><span data-i18n="t74">Fit-out so far: $31,200 (done)</span></p>
+                            <p class="mb-2"><i class="fa fa-arrow-right me-2"></i><span data-i18n="t75">Phase 1 goal: $20,000 (open the doors)</span></p>
+                            <p class="mb-2"><i class="fa fa-arrow-right me-2"></i><span data-i18n="t76">Full build remaining: ~$100,000</span></p>
                         </div>
-                        <a class="btn py-3 w-100 mt-4" href="#!" target="_blank" style="background-color: #E6A817; border-color: #E6A817; color: #0D1B0F; font-weight: 700;">Donate Now</a>
+                        <a class="btn py-3 w-100 mt-4" href="https://www.gofundme.com/f/build-africas-first-multidiscipline-cue-sports-centre" target="_blank" style="background-color: #E6A817; border-color: #E6A817; color: #0D1B0F; font-weight: 700;" data-i18n="t13">Donate Now</a>
                     </div>
                 </div>
             </div>
@@ -393,8 +393,8 @@
     <div class="container-fluid py-5" style="background-color: #F5F5F0;">
         <div class="container">
             <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="section-title bg-white text-center text-primary px-3" style="background-color: #F5F5F0 !important;">Where Your Money Goes</p>
-                <h1 class="display-6 mb-5">Full Transparency</h1>
+                <p class="section-title bg-white text-center text-primary px-3" style="background-color: #F5F5F0 !important;" data-i18n="t46">Where Your Money Goes</p>
+                <h1 class="display-6 mb-5" data-i18n="t47">Full Transparency</h1>
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-4 wow fadeIn" data-wow-delay="0.1s">
@@ -402,8 +402,8 @@
                         <div class="btn-square bg-primary mx-auto mb-3" style="width: 60px; height: 60px; border-radius: 50% !important;">
                             <i class="fa fa-hand-holding-dollar fa-2x" style="color: #E6A817;"></i>
                         </div>
-                        <h5>You Donate</h5>
-                        <p class="small mb-0">Via GoFundMe or Kickstarter. All major payment methods accepted.</p>
+                        <h5 data-i18n="t48">You Donate</h5>
+                        <p class="small mb-0" data-i18n="t49">Via GoFundMe. All major payment methods accepted.</p>
                     </div>
                 </div>
                 <div class="col-md-4 wow fadeIn" data-wow-delay="0.3s">
@@ -411,8 +411,8 @@
                         <div class="btn-square bg-primary mx-auto mb-3" style="width: 60px; height: 60px; border-radius: 50% !important;">
                             <i class="fa fa-building-columns fa-2x" style="color: #E6A817;"></i>
                         </div>
-                        <h5>Funds Held in Trust</h5>
-                        <p class="small mb-0">Received into a dedicated Dutch bank account managed by Date van Leeuwen (Netherlands).</p>
+                        <h5 data-i18n="t50">Funds Held in Trust</h5>
+                        <p class="small mb-0" data-i18n="t51">Received into a dedicated Dutch bank account managed by Date van Leeuwen (Netherlands).</p>
                     </div>
                 </div>
                 <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
@@ -420,13 +420,13 @@
                         <div class="btn-square bg-primary mx-auto mb-3" style="width: 60px; height: 60px; border-radius: 50% !important;">
                             <i class="fa fa-arrow-right-arrow-left fa-2x" style="color: #E6A817;"></i>
                         </div>
-                        <h5>Transferred to Kenya</h5>
-                        <p class="small mb-0">Via Wise (formerly TransferWise) directly to the build team in Nakuru. Every transfer documented.</p>
+                        <h5 data-i18n="t52">Transferred to Kenya</h5>
+                        <p class="small mb-0" data-i18n="t53">Via Wise (formerly TransferWise) directly to the build team in Nakuru. Every transfer documented.</p>
                     </div>
                 </div>
             </div>
             <div class="text-center mt-4 wow fadeIn" data-wow-delay="0.7s">
-                <p class="small text-muted mb-0">Entity registration in progress. Operated by Date van Leeuwen (NL) and Peter Kenyua (KE).</p>
+                <p class="small text-muted mb-0" data-i18n="t54">Entity registration in progress. Operated by Date van Leeuwen (NL) and Peter Kenyua (KE).</p>
             </div>
         </div>
     </div>
@@ -437,9 +437,9 @@
     <div id="team" class="container-fluid py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="section-title bg-white text-center text-primary px-3">Our Team</p>
-                <h1 class="display-6 mb-2">The People Behind Cue for Life</h1>
-                <p class="mb-5">Talent shouldn't depend on geography. These are the people making sure it doesn't.</p>
+                <p class="section-title bg-white text-center text-primary px-3" data-i18n="t55">Our Team</p>
+                <h1 class="display-6 mb-2" data-i18n="t56">The People Behind Cue for Life</h1>
+                <p class="mb-5" data-i18n="t57">Talent shouldn't depend on geography. These are the people making sure it doesn't.</p>
             </div>
             <div class="row g-4 mb-5">
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
@@ -447,8 +447,8 @@
                         <div class="team-detail pe-4">
                             <div class="img-placeholder team mb-4">Photo: Date</div>
                             <h3>Date van Leeuwen</h3>
-                            <span>Project Lead — Netherlands</span>
-                            <p class="mt-3 small">Billiard and pool table technician with 25+ years of experience. Maintains tables and cloth across the Netherlands. The driving force behind Cue for Life.</p>
+                            <span data-i18n="t58">Project Lead — Netherlands</span>
+                            <p class="mt-3 small" data-i18n="t59">Billiard and pool table technician with 25+ years of experience. Maintains tables and cloth across the Netherlands. The driving force behind Cue for Life.</p>
                         </div>
                     </div>
                 </div>
@@ -457,8 +457,8 @@
                         <div class="team-detail pe-4">
                             <div class="img-placeholder team alt-tone mb-4">Photo: Peter</div>
                             <h3>Peter Kenyua</h3>
-                            <span>Partner &amp; Local Lead — Kenya</span>
-                            <p class="mt-3 small">Based in Nakuru, Peter is the on-the-ground force behind the centre. His long-held dream: all disciplines under one roof, with training, hotel, restaurant, bar, and cue shop.</p>
+                            <span data-i18n="t60">Partner &amp; Local Lead — Kenya</span>
+                            <p class="mt-3 small" data-i18n="t61">Based in Nakuru, Peter is the on-the-ground force behind the centre. His long-held dream: all disciplines under one roof, with training, hotel, restaurant, bar, and cue shop.</p>
                         </div>
                     </div>
                 </div>
@@ -467,8 +467,8 @@
                         <div class="team-detail pe-4">
                             <div class="img-placeholder team gold-tone mb-4">Photo: Amos</div>
                             <h3>Amos Nderwa</h3>
-                            <span>Programme Representative — Kenya</span>
-                            <p class="mt-3 small">Heyball competitor, World Chinese Pool Masters finalist, swimmer, sportsman, family man. Proof of incredible perseverance and what Kenyan talent can achieve.</p>
+                            <span data-i18n="t62">Programme Representative — Kenya</span>
+                            <p class="mt-3 small" data-i18n="t63">Heyball competitor, World Chinese Pool Masters finalist, swimmer, sportsman, family man. Proof of incredible perseverance and what Kenyan talent can achieve.</p>
                         </div>
                     </div>
                 </div>
@@ -484,10 +484,10 @@
                             </div>
                             <div class="ps-3">
                                 <h5 class="mb-0">Date van Leeuwen</h5>
-                                <span class="small text-muted">Project Lead</span>
+                                <span class="small text-muted" data-i18n="t64">Project Lead</span>
                             </div>
                         </div>
-                        <p class="mb-0" style="font-size: 1.05rem;">This centre and Cue for Life is for me personally the ultimate proof that there is kindness, that people will share, that talent will be supported, and that there is such a thing as 'Together'.</p>
+                        <p class="mb-0" style="font-size: 1.05rem;" data-i18n="t66">This centre and Cue for Life is for me personally the ultimate proof that there is kindness, that people will share, that talent will be supported, and that there is such a thing as 'Together'.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
@@ -498,10 +498,10 @@
                             </div>
                             <div class="ps-3">
                                 <h5 class="mb-0">Date van Leeuwen</h5>
-                                <span class="small text-muted">On Amos Nderwa</span>
+                                <span class="small text-muted" data-i18n="t65">On Amos Nderwa</span>
                             </div>
                         </div>
-                        <p class="mb-0" style="font-size: 1.05rem;">Amos is proof of incredible perseverance and self-belief — someone who might seem to have less, but carries more heart and determination than most. That's exactly why he represents Cue for Life.</p>
+                        <p class="mb-0" style="font-size: 1.05rem;" data-i18n="t67">Amos is proof of incredible perseverance and self-belief — someone who might seem to have less, but carries more heart and determination than most. That's exactly why he represents Cue for Life.</p>
                     </div>
                 </div>
             </div>
@@ -515,10 +515,10 @@
         <div class="container">
             <div class="row g-5 py-5">
                 <div class="col-lg-6 col-md-6">
-                    <h4 class="text-light mb-4">Contact Us</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kunste Hotel, Nakuru, Kenya</p>
+                    <h4 class="text-light mb-4" data-i18n="t68">Contact Us</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i><span data-i18n="t77">Kunste Hotel, Nakuru, Kenya</span></p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@cueforlife.com</p>
-                    <p class="mb-2"><i class="fa fa-building me-3"></i>Cue for Life (registration in progress)</p>
+                    <p class="mb-2"><i class="fa fa-building me-3"></i><span data-i18n="t78">Cue for Life (registration in progress)</span></p>
                     <div class="d-flex pt-3">
                         <span class="btn btn-square btn-primary me-2" style="opacity: 0.4; cursor: default;" title="Coming soon"><i class="fab fa-instagram"></i></span>
                         <span class="btn btn-square btn-primary me-2" style="opacity: 0.4; cursor: default;" title="Coming soon"><i class="fab fa-facebook-f"></i></span>
@@ -526,16 +526,16 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <h4 class="text-light mb-4" data-i18n="t69">Quick Links</h4>
                     <div class="row">
                         <div class="col-6">
                             <a class="btn btn-link" href="#home">Home</a>
-                            <a class="btn btn-link" href="#about">About Us</a>
+                            <a class="btn btn-link" href="#about" data-i18n="t16">About Us</a>
                             <a class="btn btn-link" href="#disciplines">Disciplines</a>
                         </div>
                         <div class="col-6">
-                            <a class="btn btn-link" href="#donate">Donate</a>
-                            <a class="btn btn-link" href="#team">Our Team</a>
+                            <a class="btn btn-link" href="#donate" data-i18n="t6">Donate</a>
+                            <a class="btn btn-link" href="#team" data-i18n="t55">Our Team</a>
                             <a class="btn btn-link" href="#contact">Contact</a>
                         </div>
                     </div>
@@ -567,6 +567,34 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- Language toggle (EN default, NL via data-i18n) -->
+    <script>
+    (function () {
+        var NL = {"t1": "E-mail", "t2": "Locatie", "t3": "Geregistreerd", "t4": "Cue for Life (binnenkort)", "t5": "Over ons", "t6": "Doneer", "t7": "Socials volgen binnenkort", "t8": "Het centrum", "t9": "Spelers", "t10": "Materiaal", "t11": "Vijf disciplines. Eén dak.<br>Eén droom.", "t12": "We bouwen het eerste multidisciplinaire biljartcentrum van Afrika in Nakuru, Kenia: faciliteiten van wereldklasse voor spelers die daar nooit eerder toegang toe hadden.", "t13": "Doneer nu", "t14": "Ons verhaal", "t15": "Foto: Date &amp; Peter op een toernooi", "t16": "Over ons", "t17": "Van een toevallige ontmoeting naar een gedeelde droom", "t18": "Het begon in 2018 op een Nederlands kampioenschap biljarten. Date van Leeuwen reisde naar China voor het wereldtoernooi en zag daar met eigen ogen de kloof tussen wat profspelers vanzelfsprekend vinden en wat beschikbaar is in landen waar goed materiaal schaars is.", "t19": "In de bus naar de speellocatie ontmoette Date Peter Kenyua uit Kenia. Uit hun gesprek ontstond een idee: goede tafels, keus en accessoires verzamelen en die bij de spelers krijgen die ze het hardst nodig hebben. Dat idee groeide uit tot Cue for Life.", "t20": "Onze missie", "t21": "Het eerste multidisciplinaire biljartcentrum van Afrika bouwen: vijf disciplines onder één dak, met training, competitie en gemeenschap als kern.", "t22": "Vijf disciplines onder één dak.", "t23": "De eerste locatie in Afrika, en mogelijk ter wereld, waar alle vijf grote biljartdisciplines onder één dak samenkomen.", "t24": "English pool (blackball)", "t25": "Het klassieke blackball-spel: snel, tactisch en enorm populair in Afrika en Europa.", "t26": "Amerikaans pool", "t27": "9-ball, 10-ball en 8-ball: de disciplines die het wereldtoneel en de proftours domineren.", "t28": "Chinees 8-ball: de snelst groeiende keusport ter wereld, met enorme toernooien en prijzenpotten.", "t29": "Het spel van de gentleman: precisie, strategie en de ultieme test van balcontrole op een tafel van 12 voet.", "t30": "Russisch biljart (pyramid)", "t31": "Gespeeld op een tafel van snookerformaat met ballen die nauwelijks in de pockets passen: een echte test van precisie en kracht.", "t32": "Het complete centrum", "t33": "Meer dan alleen tafels: het centrum krijgt trainingsprogramma's, een hotel, restaurant, bar en keushop.", "t34": "Tafels in Kenia", "t35": "Biljartdisciplines", "t36": "Landen verenigd", "t37": "Al geïnvesteerd", "t38": "De bouw", "t39": "We zijn er bijna. Help ons de eindstreep te halen", "t40": "Er staan al 22 tafels in Kenia, met een waarde van ruim $53.000. Meer dan $31.000 is al besteed aan de inrichting van de locatie in Kunste Hotel, Nakuru. De oorspronkelijke financier, Fred, overleed plotseling in oktober 2025. Date en Peter zetten het project voort.", "t41": "Help ons af te maken waar we aan begonnen zijn", "t42": "De volledige bouw kost ongeveer $100.000. We halen dat in fases op: fase 1 is $20.000 om de deuren te openen (vergunningen, huur, toiletten, verlichting, keus en ballen, vloer, snookerzaal). Zodra het centrum open is, verdient het zichzelf terug terwijl de rest volgt. Elke dollar gaat rechtstreeks naar de bouw.", "t43": "Met jouw steun krijgen spelers in Kenia toegang tot faciliteiten die de meeste profs vanzelfsprekend vinden.", "t44": "Doel van de inzameling", "t45": "USD, fase 1: de deuren open", "t46": "Waar je geld naartoe gaat", "t47": "Volledige transparantie", "t48": "Jij doneert", "t49": "Via GoFundMe. Alle gangbare betaalmethoden worden geaccepteerd.", "t50": "Geld in beheer", "t51": "Ontvangen op een aparte Nederlandse bankrekening, beheerd door Date van Leeuwen (Nederland).", "t52": "Overgemaakt naar Kenia", "t53": "Via Wise (voorheen TransferWise) rechtstreeks naar het bouwteam in Nakuru. Elke overboeking wordt gedocumenteerd.", "t54": "Registratie van de stichting in behandeling. Uitgevoerd door Date van Leeuwen (NL) en Peter Kenyua (KE).", "t55": "Ons team", "t56": "De mensen achter Cue for Life", "t57": "Talent zou niet van je woonplaats moeten afhangen. Dit zijn de mensen die daarvoor zorgen.", "t58": "Projectleider, Nederland", "t59": "Biljart- en pooltafeltechnicus met ruim 25 jaar ervaring. Onderhoudt tafels en lakens door heel Nederland. De drijvende kracht achter Cue for Life.", "t60": "Partner &amp; lokale leiding, Kenia", "t61": "Peter woont in Nakuru en is de kracht ter plaatse achter het centrum. Zijn lang gekoesterde droom: alle disciplines onder één dak, met training, hotel, restaurant, bar en keushop.", "t62": "Ambassadeur van het programma, Kenia", "t63": "Heyball-speler, finalist van de World Chinese Pool Masters, zwemmer, sportman, familieman. Het bewijs van ongelooflijk doorzettingsvermogen en van wat Keniaans talent kan bereiken.", "t64": "Projectleider", "t65": "Over Amos Nderwa", "t66": "Dit centrum en Cue for Life zijn voor mij persoonlijk het ultieme bewijs dat er goedheid bestaat, dat mensen willen delen, dat talent gesteund wordt en dat er zoiets is als 'Samen'.", "t67": "Amos is het bewijs van ongelooflijk doorzettingsvermogen en zelfvertrouwen: iemand die misschien minder lijkt te hebben, maar meer hart en vastberadenheid in zich draagt dan de meesten. Precies daarom vertegenwoordigt hij Cue for Life.", "t68": "Contact", "t69": "Snelle links", "t70": "Locatie geregeld, inrichting in volle gang", "t71": "Registratie stichting in behandeling", "t72": "Laatste financiering nodig om de bouw af te ronden", "t73": "Tafels &amp; materiaal: $53.200 (gedaan)", "t74": "Inrichting tot nu toe: $31.200 (gedaan)", "t75": "Doel fase 1: $20.000 (de deuren open)", "t76": "Volledige bouw nog nodig: ~$100.000", "t77": "Kunste Hotel, Nakuru, Kenia", "t78": "Cue for Life (registratie in behandeling)"};
+        var els = document.querySelectorAll('[data-i18n]');
+        els.forEach(function (el) { el.setAttribute('data-en', el.innerHTML); });
+        var btn = document.getElementById('cflLang');
+        function setLang(l) {
+            els.forEach(function (el) {
+                var k = el.getAttribute('data-i18n');
+                el.innerHTML = (l === 'nl' && NL[k]) ? NL[k] : el.getAttribute('data-en');
+            });
+            document.documentElement.lang = l;
+            btn.textContent = l === 'nl' ? 'EN' : 'NL';
+            btn.title = l === 'nl' ? 'English' : 'Nederlands';
+            try { localStorage.setItem('cfl-lang', l); } catch (e) {}
+        }
+        var q = new URLSearchParams(location.search).get('lang');
+        var saved = null;
+        try { saved = localStorage.getItem('cfl-lang'); } catch (e) {}
+        var initial = q || saved || ((navigator.language || '').toLowerCase().indexOf('nl') === 0 ? 'nl' : 'en');
+        setLang(initial === 'nl' ? 'nl' : 'en');
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            setLang(document.documentElement.lang === 'nl' ? 'en' : 'nl');
+        });
+    })();
+    </script>
 </body>
 
 </html>
