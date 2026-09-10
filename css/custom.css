@@ -634,3 +634,27 @@ body {
 .footer {
     background: #0D1B0F !important;
 }
+
+/* Language toggle (EN/NL), topbar next to the title */
+.cfl-lang-toggle {
+    display: inline-flex;
+    border: 2px solid #E6A817;
+    border-radius: 999px;
+    padding: 3px;
+    background: rgba(230,168,23,0.08);
+}
+.cfl-lang-btn {
+    border: 0;
+    background: transparent;
+    color: #E6A817;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    padding: 4px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    line-height: 1.2;
+    transition: background .15s, color .15s;
+}
+.cfl-lang-btn:hover { background: rgba(230,168,23,0.2); }
+.cfl-lang-btn.active { background: #E6A817; color: #0D1B0F; }
