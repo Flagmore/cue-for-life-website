@@ -660,3 +660,39 @@ body {
 }
 .cfl-lang-btn:hover { background: rgba(230,168,23,0.2); }
 .cfl-lang-btn.active { background: #E6A817; color: #0D1B0F; }
+
+
+/* ===== Responsive fixes (16 Sept 2026): full-screen layout untouched, only < 1200px changes ===== */
+
+/* The title never wraps: wrapped "Cue / for / Life" was clipped by the fixed 90px top bar */
+.top-bar h1 { white-space: nowrap; }
+
+@media (max-width: 1199.98px) {
+    .top-bar {
+        height: auto;
+        min-height: 90px;
+        padding: 14px 30px;
+    }
+    .top-bar h1 { font-size: 2rem; }
+    .top-bar h6 { font-size: 0.75rem; }
+    .top-bar .col-lg-8 span { font-size: 0.85rem; white-space: nowrap; }
+    /* Three info blocks don't fit between 992 and 1200px: drop the email one (it's in the footer too) */
+    .top-bar .col-lg-8 .col-lg-4:first-child { display: none; }
+    .top-bar .col-lg-8 .col-lg-4 { flex: 0 0 50%; max-width: 50%; }
+    .nav-bar { padding: 0 30px; }
+}
+
+@media (max-width: 991.98px) {
+    .top-bar { padding: 12px 16px; }
+    .top-bar h1 { font-size: 1.75rem; }
+    .top-bar .cfl-lang-toggle { margin-left: 1rem !important; }
+    .nav-bar { padding: 0 16px; }
+
+    /* Hero: photos sit behind the text on phones, so darken them more and lift the type */
+    .cfl-hero-overlay { background: rgba(13,27,15,0.9); }
+    .cfl-hero h1, .cfl-hero p { text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
+}
+
+@media (max-width: 575.98px) {
+    .top-bar h1 { font-size: 1.5rem; }
+}
